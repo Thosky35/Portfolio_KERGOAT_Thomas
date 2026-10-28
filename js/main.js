@@ -71,17 +71,15 @@
 
 
     // Modal Video
-    var $videoSrc;
-    $('.btn-play').click(function () {
-        $videoSrc = $(this).data("src");
+    // Modal Video
+    var videoEl = document.getElementById('video');
+    $('#videoModal').on('shown.bs.modal', function () {
+        videoEl.play();
     });
-    console.log($videoSrc);
-    $('#videoModal').on('shown.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-    })
-    $('#videoModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc);
-    })
+    $('#videoModal').on('hide.bs.modal', function () {
+        videoEl.pause();
+        videoEl.currentTime = 0;
+    });
 
 
     // Facts counter

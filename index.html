@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>KERGOAT Thomas - Personal Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="ePortfolio, engineering, ENSEEIHT, Toulouse INP, mobility" name="keywords">
+    <meta content="ePortfolio of Thomas Kergoat, engineering student at ENSEEIHT (Toulouse INP)" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -53,17 +53,16 @@
         <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">Sports</a>
-                <a href="#skill" class="nav-item nav-link">Experiences</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#service" class="nav-item nav-link">Engineering</a>
+                <a href="#team" class="nav-item nav-link">Mobility</a>
+                <a href="#civic" class="nav-item nav-link">Civic Engagement</a>
             </div>
             <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
                 <h1 class="text-primary fw-bold m-0">Portfolio</h1>
             </a>
             <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projects</a>
-                <a href="#team" class="nav-item nav-link">Mobility</a>
-                <a href="#testimonial" class="nav-item nav-link">Interviews</a>
+                <a href="#sports" class="nav-item nav-link">Sports &amp; Activities</a>
+                <a href="#career" class="nav-item nav-link">Career Development</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -82,19 +81,34 @@
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none">Engineering, Mathematics, Physics, Electronics, Computer Science, Telecommunications</div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a href="CV_Thomas_Kergoat_EN.pdf" class="btn btn-primary py-3 px-4 me-5" download>Download CV</a>
                         <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            data-src="Elevator_pitch_video.mp4" data-bs-target="#videoModal">
                             <span></span>
                         </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+                        <h5 class="ms-4 mb-0 d-none d-sm-block">Watch my pitch</h5>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/Thomas.png" alt="">
+                    <div class="hero-visual">
+                        <span class="deco dots"></span>
+                        <span class="deco ring"></span>
+                        <span class="deco plus plus-1">+</span>
+                        <span class="deco plus plus-2">+</span>
+                        <span class="deco circle circle-1"></span>
+                        <span class="deco circle circle-2"></span>
+
+                        <div class="arch-back"></div>
+                        <div class="arch-frame">
+                        <img src="img/Thomas.png" alt="Thomas Kergoat">
+                        </div>
+
+                        <div class="chip chip-1">🎓 Engineering student</div>
+                        <div class="chip chip-2">📐 Mathematics</div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
     <!-- Header End -->
 
@@ -104,14 +118,16 @@
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <h3 class="modal-title" id="exampleModalLabel">My elevator pitch</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <!-- 16:9 aspect ratio -->
                     <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
+                        <video id="video" controls preload="none" playsinline>
+                            <source src="Elevator_pitch_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -121,66 +137,308 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">15</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">of working experience as a web designer & developer</h3>
-                    </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+    <div class="container-xxl py-6" id="welcome">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5 mb-4">Welcome to my ePortfolio</h1>
+                <p class="mb-4">Hello, I'm Thomas, from Rennes. After two years of MPSI/MP preparatory classes at Lycée Sainte-Geneviève, I joined ENSEEIHT (Toulouse INP) in 2026 to become an engineer. I enjoy mathematics, physics, electronics and programming, and I also love building small projects of my own.</p>
+                <p class="mb-4">This ePortfolio has three purposes: to showcase my projects and best productions, to step back and reflect on what I have learned so far, and to present my career project.</p>
+                <p class="mb-0">Use the menu or the shortcuts on the right to explore the six sections of the portfolio.</p>
+            </div>
+
+            <!-- Colonne droite -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <br><br>
+                <div class="portfolio-menu">
+                    
+                    <a href="#service" class="d-block text-decoration-none text-reset mb-3">
+                        <h5>📚 Engineering Courses</h5>
+                        <p>Projects, reports and lessons learned</p>
+                    </a>
+
+                    <a href="#team" class="d-block text-decoration-none text-reset mb-3">
+                        <h5>🌍 International Mobility</h5>
+                        <p>Where I would like to study abroad and why</p>
+                    </a>
+
+                    <a href="#civic" class="d-block text-decoration-none text-reset mb-3">
+                        <h5>🤝 Civic Engagement</h5>
+                        <p>My commitments and future plans</p>
+                    </a>
+
+                    <a href="#sports" class="d-block text-decoration-none text-reset mb-3">
+                        <h5>🏀 Sports &amp; Other Activities</h5>
+                        <p>Sports, mathematics and personal interests</p>
+                    </a>
+
+                    <a href="#career" class="d-block text-decoration-none text-reset mb-3">
+                        <h5>🚀 Career Development</h5>
+                        <p>CV, LinkedIn, role models and pitch video</p>
+                    </a>
+
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- About End -->
 
 
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
+    
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s"><div class="col-12"><h1 class="display-5 mb-3">Engineering Courses</h1>
+            <p class="mb-0">Four scientific and technical projects completed during my free time, each with a short reflection on what I learned.</p></div></div>
+            <div class="row g-4"><div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s"><div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+<div class="portfolio-img rounded overflow-hidden"><img class="img-fluid" src="img/tfjm.png" alt="TFJM²"></div>
+<div class="ms-sm-4"><h4 class="mb-3">TFJM²</h4><p>In 2024, I took part in the TFJM² (a French mathematics research tournament) with four friends. We worked on open problems, won the regional tournament and finished 5th at the national final.</p><p><strong>What I learned:</strong> how to reason rigorously on a problem with no known answer, defend my solution orally against other teams, and share the work inside a team.</p>
+<div class="service-btn"><a class="btn btn-lg-square btn-outline-secondary border-2" href="https://tfjm.org/"><i class="fa fa-eye"></i></a><a class="btn btn-lg-square btn-outline-secondary border-2" href="AOM_4_final.pdf" download><i class="fa fa-link"></i></a></div></div></div></div><div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s"><div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+<div class="portfolio-img rounded overflow-hidden"><img class="img-fluid" src="img/TIPE.png" alt="TIPE: the Van der Pol oscillator"></div>
+<div class="ms-sm-4"><h4 class="mb-3">TIPE: the Van der Pol oscillator</h4><p>Many natural and engineered systems exhibit self-sustained oscillations, from the human heartbeat to electronic circuits. For my 2026 TIPE, I investigated the Van der Pol oscillator, a mathematical model introduced to describe such phenomena. Through mathematical analysis, numerical simulations and physical interpretation, I explored how a simple equation can capture complex non-linear behaviour and explain the emergence of stable oscillations.</p><p><strong>What I learned:</strong> mathematics, simulation and physics complement each other, and even complex concepts can be made accessible through a clear and structured presentation.</p>
+<div class="service-btn"><a class="btn btn-lg-square btn-outline-secondary border-2" href="https://www.scei-concours.fr/tipe.html"><i class="fa fa-eye"></i></a><a class="btn btn-lg-square btn-outline-secondary border-2" href="Van_der_Pol_pres_scei.pdf" download><i class="fa fa-link"></i></a></div></div></div></div><div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s"><div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+<div class="portfolio-img rounded overflow-hidden"><img class="img-fluid" src="img/demineur.jpg" alt="Games: Minesweeper &amp; Snake"></div>
+<div class="ms-sm-4"><h4 class="mb-3">Games: Minesweeper &amp; Snake</h4><p>I programmed a Minesweeper and a Snake game. The Snake game is written in C, with a working menu (Play / Options / Quit) and ideas for further improvements.</p><p><strong>What I learned:</strong> how to structure a program, handle user input, and debug step by step.</p>
+<div class="service-btn"></div></div></div></div><div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s"><div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+<div class="portfolio-img rounded overflow-hidden"><img class="img-fluid" src="img/devweb.avif" alt="Web development"></div>
+<div class="ms-sm-4"><h4 class="mb-3">Web development</h4><p>I build websites with HTML, CSS and JavaScript: this portfolio, a website about my football club, a site of maths exercises written in LaTeX and 3 other projects.</p><p><strong>What I learned:</strong> how to adapt an existing template, organise content clearly and fix errors one by one.</p>
+<div class="service-btn"></div></div></div></div></div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">Educative</li>
+                        <li class="mx-3" data-filter=".second">Commitments</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/snu.png" alt="Portfolio image">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/snu.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.snu.gouv.fr/"><i class="fa fa-link"></i></a>
+                            <p class="portfolio-caption">In 2022, I participated in the French National Universal Service (SNU).</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/tfjm.png" alt="Portfolio image">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/tfjm.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://tfjm.org/"><i class="fa fa-link"></i></a>
+                            <p class="portfolio-caption">In 2024, my team won the TFJM² regional tournament in Rennes and achieved 5th place nationally.<br> I was also awarded Best Opponent in the national final.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/oise.png" alt="Portfolio image">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/oise.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.oise.com/fr"><i class="fa fa-link"></i></a>
+                            <p class="portfolio-caption">In 2025, I attended an intensive English programme in Oxford with OISE, specifically designed to prepare students for French engineering school entrance examinations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/sifflet.jpg" alt="Portfolio image">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/sifflet.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://illeetvilainebasketball.org/formation-arbitre-officiel"><i class="fa fa-link"></i></a>
+                            <p class="portfolio-caption">Coached young basketball players and officiated games as a referee for several years.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/cci2.png" alt="Portfolio image">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/cci2.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://castor-informatique.fr/"><i class="fa fa-link"></i></a>
+                            <p class="portfolio-caption">Participated almost every year in the Castor Informatique and Algoréa competitions, regularly achieving top 100 rankings nationwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/usg.png" alt="Portfolio image">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/usg.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://usg-basket.com/"><i class="fa fa-link"></i></a>
+                            <p class="portfolio-caption">Played competitive basketball for 10 years at USG Saint-Grégoire and volunteered for one year.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-6 pb-5" id="team">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6"><h1 class="display-5 mb-0">International Mobility</h1></div>
+                <div class="col-lg-6 text-lg-end"><a class="btn btn-primary py-3 px-5" href="http://inpt.adv-pub.moveonfr.com/report-page-1581/">All agreements</a></div>
+            </div>
+            <p>As part of my academic mobility project, I aim to study in a country whose social values and living environment match my personal expectations. Northern Europe and Canada represent ideal destinations due to their strong emphasis on quality of life, cultural openness, and safety. I am particularly drawn to regions with large rural areas and preserved natural spaces, as I value calm environments and close contact with nature. These conditions would allow me to maintain a healthy balance while pursuing demanding studies, making these countries highly coherent with my personal and academic goals.</p><p>I have not done my mobility yet, so here are my three potential projects and my motivations. Click on each school to see more.</p>      <br><br><br><div class="row g-4"><div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"><div class="team-item position-relative"><a href="page-tromso.html"><img class="img-fluid rounded" src="img/tromso.jpg" alt="Tromsø, Norway"><div class="team-text bg-white rounded-end p-4"><div><h5>Tromsø</h5><span>Norway</span></div><i class="fa fa-arrow-right fa-2x text-primary"></i></div></a></div><p class="mt-3">UiT is the northernmost university in the world, with a strong focus on Arctic and environmental sciences, surrounded by nature.</p></div><div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s"><div class="team-item position-relative"><a href="page-lulea.html"><img class="img-fluid rounded" src="img/lulea.jpg" alt="Luleå, Sweden"><div class="team-text bg-white rounded-end p-4"><div><h5>Luleå</h5><span>Sweden</span></div><i class="fa fa-arrow-right fa-2x text-primary"></i></div></a></div><p class="mt-3">LTU combines engineering, space research and close links with industry in a calm Swedish setting.</p></div><div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s"><div class="team-item position-relative"><a href="page-montreal.html"><img class="img-fluid rounded" src="img/montreal2.jpg" alt="Montréal, Canada"><div class="team-text bg-white rounded-end p-4"><div><h5>Montreal</h5><span>Canada</span></div><i class="fa fa-arrow-right fa-2x text-primary"></i></div></a></div><p class="mt-3">Polytechnique Montreal is strong in AI and aerospace, in a multicultural city.</p></div></div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <div class="container-xxl py-6 bg-light" id="civic"><div class="container"><h1 class="display-5 mb-4">Civic Engagement</h1><div class="row g-5"><div class="col-lg-6">    <h4>🎓 Civic Service (SNU)</h4>
+
+<p>
+    I took part in the French Service National Universel (SNU), an experience that strengthened my sense of civic responsibility, teamwork and commitment to the community.
+</p>
+
+<p>
+    Through collective projects, workshops and community service activities, I worked with young people from different backgrounds and learned how to cooperate effectively in new environments. These experiences helped me develop adaptability, leadership and a strong sense of initiative.
+</p>
+
+<p>
+    The programme also raised my awareness of social and environmental issues, encouraging me to take a more active role in local community projects and volunteering activities.
+</p>
+
+    <h4>🏀 Youth Basketball Commitment</h4>
+    <p>
+        I have devoted more than 90 hours to youth basketball, coaching players aged 7 to 15 during training sessions, holiday camps and competitions. Beyond teaching technical and tactical skills, I helped young athletes develop confidence, discipline and team spirit.
+    </p>
+
+    <p>
+        I also refereed official matches, strengthening my decision-making abilities, sense of fairness and capacity to take responsibility under pressure.
+    </p>
+
+    <p>
+        In addition, I contributed to improving the communication and visibility of my club by redesigning its website and helping manage its social media presence, making information more accessible to players, families and members.
+    </p>
+
+    </div>
+<div class="col-lg-6">
+    
+    <h4>🌍 Community & Environmental Volunteering</h4>
+    <p>
+        I participated in several community clean-up initiatives in Saint-Grégoire, organised by both the municipality and my schools. These activities promoted environmental awareness and collective responsibility while contributing directly to cleaner public spaces.
+    </p>
+
+    <p>
+        In late 2023, I also volunteered with <em>Le Panier de Grégoire</em>, taking part in outreach and food-distribution activities for people facing hardship. This experience reinforced my understanding of solidarity and the importance of local volunteer networks.
+    </p>
+    
+    <h4>🤝 What I plan to do</h4>
+
+<p>
+    During my studies at ENSEEIHT, I would like to continue my civic engagement through local associations and volunteer work. Having already enjoyed coaching young basketball players, I would especially like to help younger students develop confidence and succeed in mathematics and science.
+</p>
+
+<p>
+    For example, I could volunteer to provide tutoring for pupils facing academic difficulties, or take part in mentoring programmes designed to support students from disadvantaged backgrounds.
+</p>
+
+<p>
+    I would also be interested in contributing to local charities or community organisations, particularly those focused on education, social inclusion or environmental protection.
+</p>
+</div></div></div></div>
+    <div class="container" id="sports">
+        <h1 class="display-5 mb-4">Sports &amp; Other Activities</h1>
+<br>
+        <div class="row g-5">
+
+            <!-- Colonne gauche -->
+            <div class="col-lg-6">
+
+                <h4>🏀 Basketball</h4>
+                <p>
+                    Basketball has been a major part of my life for more than ten years. Alongside playing competitively, I served as a referee for the Comité Basket 35 from 2017 to 2023 and coached young players at USG Basket Saint-Grégoire in 2022-2023.
+                </p>
+
+                <p>
+                    Refereeing taught me to stay calm and make quick decisions under pressure, while coaching developed my leadership, patience and communication skills. I hope to continue playing and contributing to the sport while studying in Toulouse.
+                </p>
+
+                <h4 class="mt-5">🥋🏸 Other Sports</h4>
+                <p>
+                    In addition to basketball, I practised judo and badminton in local sports clubs. These experiences strengthened my discipline, perseverance and ability to work towards long-term goals, both individually and as part of a team.
+                </p>
+
+            </div>
+
+            <!-- Colonne droite -->
+            <div class="col-lg-6">
+
+                <h4>🧮 Mathematics Club</h4>
+                    <p>
+                        For several years, I attended the
+                        <a href="https://irmar.univ-rennes.fr/club-rennes-et-maths"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Rennes Mathematics Club
+                        </a>,
+                        an outreach programme run by the University of Rennes and its mathematics research department. Through talks, workshops and problem-solving sessions, I explored advanced mathematical topics beyond the school curriculum and shared my passion for mathematics with students from across the region.
+                    </p>
+
+                <h4 class="mt-5">💻 Languages &amp; Personal Interests</h4>
+                <p>
+                    I am interested in programming and web development, particularly creating websites and digital projects. I speak English and Spanish and am currently learning the basics of Breton, the regional language of Brittany.
+                </p>
+
+                <p>
+                    ⚽ As a sports enthusiast, I also closely follow my local football club, Stade Rennais FC.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<br>
+    <div class="container-xxl py-6 pb-5" id="career">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills & Experiences</h1>
+                    <h1 class="display-5 mb-4">Career Development</h1>
                     <p class="mb-4">As part of my commitment to continuous improvement, I enjoy taking on new professional challenges and developing my skills.</p>
-                    <h3 class="mb-4">My Skills</h3>
+                    <h3 class="mb-4">My Skills &amp; Experiences</h3>
                     <div class="row align-items-center">
                         <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">French</h6>
+                                    <h6 class="font-weight-bold">Native</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="font-weight-bold">English</h6>
                                     <h6 class="font-weight-bold">B2</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
@@ -189,45 +447,36 @@
                                     <h6 class="font-weight-bold">B1</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Breton</h6>
-                                    <h6 class="font-weight-bold">Bases</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML/CSS</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
+                                    <h6 class="font-weight-bold">Python</h6>
+                                    <h6 class="font-weight-bold">Intermediate</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Python</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
+                                    <h6 class="font-weight-bold">LaTeX</h6>
+                                    <h6 class="font-weight-bold">Advanced</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="font-weight-bold">C</h6>
-                                    <h6 class="font-weight-bold">20%</h6>
+                                    <h6 class="font-weight-bold">Beginner</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
@@ -304,272 +553,18 @@
             </div>
         </div>
     </div>
-    <!-- Expertise End -->
+<br><br>
+    <!-- Expertise End --><div class="container-xxl pb-5" id="career-tools"><div class="container">
+<div class="row g-5 mb-5"><div class="col-lg-6"><h3>Career project</h3>
+<p>In the longer term, I am open to several career paths that reflect my interests in technology, mathematics and finance.</p>
 
+<p>One career path that particularly interests me is telecommunications engineering. I would like to contribute to the design and optimisation of communication networks and digital systems. The rapid development of technologies such as 5G, connected devices and future communication infrastructures makes this field both challenging and exciting.</p>
 
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Engineering projects</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Click</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+<p>Another career path that appeals to me is quantitative finance. I would like to use advanced mathematical models, statistics and algorithms to analyse financial markets and support investment decisions. This field attracts me because it combines mathematics, computer science and real-world applications.</p>
 
-                        <div class="portfolio-img rounded overflow-hidden">
-                            <img class="img-fluid" src="img/tfjm.png" alt="">
-                        </div>
-
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">TFJM²</h4>
-                            <span>In 2024, I took part in the TFJM² with four friends. We won the regional tournament and advanced to the national final, where we achieved a 5th‑place finish.</span>
-
-                            <div class="service-btn">
-                                <a class="btn btn-lg-square btn-outline-secondary border-2" 
-                                href="https://tfjm.org/">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a class="btn btn-lg-square btn-outline-secondary border-2"  href="AOM_4_final.pdf" download>
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="portfolio-img rounded overflow-hidden">
-                            <img class="img-fluid" src="img/TIPE.png" alt="">
-                        </div>
-
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">TIPE</h4>
-                            <span>In 2026, I carried out my TIPE on the Van der Pol oscillator, a nonlinear system known for its self‑sustained oscillations. I first approached the problem mathematically, then implemented numerical simulations, and finally interpreted the results from a physical perspective.</span>
-
-                            <div class="service-btn">
-                                <a class="btn btn-lg-square btn-outline-secondary border-2" 
-                                href="https://www.scei-concours.fr/tipe.html">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a class="btn btn-lg-square btn-outline-secondary border-2"  href="Van_der_Pol_pres_scei.pdf" download>
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="portfolio-img rounded overflow-hidden">
-                            <img class="img-fluid" src="img/devweb.avif" alt="">
-                        </div>
-
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Page web</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
-
-                            <div class="service-btn">
-                                <a class="btn btn-lg-square btn-outline-secondary border-2" 
-                                href="https://tfjm.org/">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a class="btn btn-lg-square btn-outline-secondary border-2"  href="AOM_4_final.pdf" download>
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="portfolio-img rounded overflow-hidden">
-                            <img class="img-fluid" src="img/demineur.jpg" alt="">
-                        </div>
-
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Démineur</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
-
-                            <div class="service-btn">
-                                <a class="btn btn-lg-square btn-outline-secondary border-2" 
-                                href="https://tfjm.org/">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a class="btn btn-lg-square btn-outline-secondary border-2"  href="AOM_4_final.pdf" download>
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Projects</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">Educative</li>
-                        <li class="mx-3" data-filter=".second">Commitments</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/snu.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/snu.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.snu.gouv.fr/"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/tfjm.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/tfjm.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://tfjm.org/"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/oise.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/oise.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.oise.com/fr"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/sifflet.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/sifflet.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://illeetvilainebasketball.org/formation-arbitre-officiel"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/cci2.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/cci2.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://castor-informatique.fr/"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/usg.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/usg.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://usg-basket.com/"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Projects End -->
-
-
-    <!-- Team Start -->
-    <div class="container-xxl py-6 pb-5" id="team">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">International Mobility</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="http://inpt.adv-pub.moveonfr.com/report-page-1581/">All agreements</a>
-                </div>
-            </div>
-            <p>As part of my academic mobility project, I aim to study in a country whose social values and living environment match my personal expectations. Northern Europe and Canada represent ideal destinations due to their strong emphasis on quality of life, cultural openness, and safety. I am particularly drawn to regions with large rural areas and preserved natural spaces, as I value calm environments and close contact with nature. These conditions would allow me to maintain a healthy balance while pursuing demanding studies, making these countries highly coherent with my personal and academic goals.</p>      <br><br>      <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        
-                        <a href="page-tromso.html" >
-                            <img class="img-fluid rounded" src="img/tromso.jpg" alt="">
-                        
-
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Tromsø</h5>
-                                <span>Norway</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-
-                        <a href="page-lulea.html">
-                            <img class="img-fluid rounded" src="img/lulea.jpg" alt="">
-                        
-
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Luleå</h5>
-                                <span>Sweden</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-
-                        <a href ="page-montreal.html">
-                            <img class="img-fluid rounded" src="img/montreal2.jpg" alt="">
-                        
-
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Montreal</h5>
-                                <span>Canada</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
+</div>
+<div class="col-lg-6"><br><br><br>
+<p>A third possibility would be to work in financial management. As I enjoy working with numbers and analysing complex situations, I could see myself contributing to the financial strategy of an organisation and eventually taking on responsibilities in positions such as Finance Director.</p><h3>My documents</h3><div class="d-flex flex-wrap gap-3"><a class="btn btn-primary py-3 px-4" href="CV_Thomas_Kergoat_EN.pdf" download>CV (English)</a><a class="btn btn-primary py-3 px-4" href="CV_Thomas_Kergoat_FR.pdf" download>CV (Français)</a><button type="button" class="btn btn-secondary py-3 px-4" data-bs-toggle="modal" data-src="Elevator_pitch_video.mp4" data-bs-target="#videoModal">Elevator pitch video</button></div></div></div>
 
     <!-- Testimonial Start -->
     <div class="container-fluid bg-light py-5 my-5" id="testimonial">
@@ -592,10 +587,10 @@
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Telecommunications connect people, machines and ideas across the world. Working in this field means helping build the networks that will support tomorrow's innovations.</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <h5>Clara</h5>
+                            <span>📡 Telecommunications Engineer</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -604,10 +599,10 @@
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Embedded systems are everywhere, from medical devices to satellites. The most rewarding part of the job is turning theoretical concepts into reliable systems that interact with the real world.</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <h5>Xavier</h5>
+                            <span>🤖 Embedded Systems Engineer</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -616,10 +611,10 @@
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Microelectronics shows how the smallest components can drive the biggest innovations.</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <h5>Dominique</h5>
+                            <span>🔬 Microelectronics Engineer</span>
                         </div>
                     </div>
                 </div>
@@ -635,16 +630,15 @@
     </div>
     <!-- Testimonial End -->
 
-
     <!-- Contact Start -->
     <div class="container-xxl pb-5" id="contact">
         <div class="container py-5">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
+                    <h1 class="display-5 mb-0">Get in touch</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
+                    <a class="btn btn-primary py-3 px-5" href="mailto:thomaskergoat35@gmail.com">Say Hello</a>
                 </div>
             </div>
             <div class="row g-5">
@@ -658,16 +652,13 @@
                     <p class="mb-2">Mail me:</p>
                     <h3 class="fw-bold">thomaskergoat35@gmail.com</h3>
                     <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
+                    <p class="mb-2">Find me on LinkedIn:</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6>
-                    <p class="mb-4">The contact form is currently active. </p>
+                <div class="col-lg-7 col-md-6">
+                    <p class="mb-4">Feel free to send me a message.</p>
                     <form action="https://formsubmit.co/36620452f6dae8a6bebd9912b5d3272f" method="POST">
                         <input type="hidden" name="_captcha" value="false">
 
@@ -716,8 +707,7 @@
     <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container-xxl pt-5 px-0">
             <div class="bg-dark">
-                <iframe
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42619.279333985745!2d-1.7296471680173788!3d48.11592698745914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede2fa7d69085%3A0x40ca5cd36e4ab30!2sRennes!5e0!3m2!1sfr!2sfr!4v1790186468114!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="width: 100%; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42619.279333985745!2d-1.7296471680173788!3d48.11592698745914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede2fa7d69085%3A0x40ca5cd36e4ab30!2sRennes!5e0!3m2!1sfr!2sfr!4v1790186468114!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="width: 100%; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
@@ -729,7 +719,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom text-secondary" href="#">Thomas KERGOAT</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
@@ -738,7 +728,6 @@
                 </div>
             </div>
         </div>
-    </div> 
     <!-- Copyright End --> 
 
 
